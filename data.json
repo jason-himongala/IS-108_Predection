@@ -8889,6 +8889,706 @@
       "row_index": 59,
       "row_data": "{\"age\":\"28\",\"income\":\"32000\",\"loan_amount\":\"112000\",\"credit_score\":\"618\",\"employment_years\":\"3\",\"existing_debts\":\"2\",\"education\":\"High School\",\"marital_status\":\"Single\",\"result\":\"Rejected\"}",
       "created_at": "2026-05-07T02:43:52.969Z"
+    },
+    {
+      "id": 1271,
+      "session_id": "session_1778123728281",
+      "row_index": 0,
+      "row_data": "{\"study_hours\":\"8\",\"attendance_rate\":\"92\",\"midterm_score\":\"85\",\"assignment_avg\":\"88\",\"sleep_hours\":\"7\",\"parent_education\":\"College\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1272,
+      "session_id": "session_1778123728281",
+      "row_index": 1,
+      "row_data": "{\"study_hours\":\"3\",\"attendance_rate\":\"55\",\"midterm_score\":\"42\",\"assignment_avg\":\"50\",\"sleep_hours\":\"5\",\"parent_education\":\"High School\",\"extracurricular\":\"No\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1273,
+      "session_id": "session_1778123728281",
+      "row_index": 2,
+      "row_data": "{\"study_hours\":\"6\",\"attendance_rate\":\"78\",\"midterm_score\":\"72\",\"assignment_avg\":\"75\",\"sleep_hours\":\"7\",\"parent_education\":\"Graduate\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1274,
+      "session_id": "session_1778123728281",
+      "row_index": 3,
+      "row_data": "{\"study_hours\":\"2\",\"attendance_rate\":\"48\",\"midterm_score\":\"38\",\"assignment_avg\":\"44\",\"sleep_hours\":\"4\",\"parent_education\":\"High School\",\"extracurricular\":\"No\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1275,
+      "session_id": "session_1778123728281",
+      "row_index": 4,
+      "row_data": "{\"study_hours\":\"9\",\"attendance_rate\":\"95\",\"midterm_score\":\"91\",\"assignment_avg\":\"93\",\"sleep_hours\":\"8\",\"parent_education\":\"Graduate\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1276,
+      "session_id": "session_1778123728281",
+      "row_index": 5,
+      "row_data": "{\"study_hours\":\"5\",\"attendance_rate\":\"70\",\"midterm_score\":\"65\",\"assignment_avg\":\"68\",\"sleep_hours\":\"6\",\"parent_education\":\"College\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1277,
+      "session_id": "session_1778123728281",
+      "row_index": 6,
+      "row_data": "{\"study_hours\":\"1\",\"attendance_rate\":\"40\",\"midterm_score\":\"30\",\"assignment_avg\":\"35\",\"sleep_hours\":\"4\",\"parent_education\":\"High School\",\"extracurricular\":\"No\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1278,
+      "session_id": "session_1778123728281",
+      "row_index": 7,
+      "row_data": "{\"study_hours\":\"7\",\"attendance_rate\":\"85\",\"midterm_score\":\"80\",\"assignment_avg\":\"82\",\"sleep_hours\":\"7\",\"parent_education\":\"College\",\"extracurricular\":\"No\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1279,
+      "session_id": "session_1778123728281",
+      "row_index": 8,
+      "row_data": "{\"study_hours\":\"4\",\"attendance_rate\":\"62\",\"midterm_score\":\"55\",\"assignment_avg\":\"60\",\"sleep_hours\":\"6\",\"parent_education\":\"High School\",\"extracurricular\":\"Yes\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1280,
+      "session_id": "session_1778123728281",
+      "row_index": 9,
+      "row_data": "{\"study_hours\":\"8\",\"attendance_rate\":\"90\",\"midterm_score\":\"88\",\"assignment_avg\":\"87\",\"sleep_hours\":\"8\",\"parent_education\":\"Graduate\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1281,
+      "session_id": "session_1778123728281",
+      "row_index": 10,
+      "row_data": "{\"study_hours\":\"3\",\"attendance_rate\":\"52\",\"midterm_score\":\"45\",\"assignment_avg\":\"48\",\"sleep_hours\":\"5\",\"parent_education\":\"High School\",\"extracurricular\":\"No\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1282,
+      "session_id": "session_1778123728281",
+      "row_index": 11,
+      "row_data": "{\"study_hours\":\"6\",\"attendance_rate\":\"75\",\"midterm_score\":\"70\",\"assignment_avg\":\"73\",\"sleep_hours\":\"7\",\"parent_education\":\"College\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1283,
+      "session_id": "session_1778123728281",
+      "row_index": 12,
+      "row_data": "{\"study_hours\":\"2\",\"attendance_rate\":\"44\",\"midterm_score\":\"35\",\"assignment_avg\":\"40\",\"sleep_hours\":\"4\",\"parent_education\":\"High School\",\"extracurricular\":\"No\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1284,
+      "session_id": "session_1778123728281",
+      "row_index": 13,
+      "row_data": "{\"study_hours\":\"9\",\"attendance_rate\":\"97\",\"midterm_score\":\"94\",\"assignment_avg\":\"95\",\"sleep_hours\":\"8\",\"parent_education\":\"Graduate\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1285,
+      "session_id": "session_1778123728281",
+      "row_index": 14,
+      "row_data": "{\"study_hours\":\"5\",\"attendance_rate\":\"68\",\"midterm_score\":\"62\",\"assignment_avg\":\"65\",\"sleep_hours\":\"6\",\"parent_education\":\"College\",\"extracurricular\":\"No\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1286,
+      "session_id": "session_1778123728281",
+      "row_index": 15,
+      "row_data": "{\"study_hours\":\"1\",\"attendance_rate\":\"38\",\"midterm_score\":\"28\",\"assignment_avg\":\"32\",\"sleep_hours\":\"3\",\"parent_education\":\"High School\",\"extracurricular\":\"No\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1287,
+      "session_id": "session_1778123728281",
+      "row_index": 16,
+      "row_data": "{\"study_hours\":\"7\",\"attendance_rate\":\"82\",\"midterm_score\":\"78\",\"assignment_avg\":\"80\",\"sleep_hours\":\"7\",\"parent_education\":\"Graduate\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1288,
+      "session_id": "session_1778123728281",
+      "row_index": 17,
+      "row_data": "{\"study_hours\":\"4\",\"attendance_rate\":\"60\",\"midterm_score\":\"52\",\"assignment_avg\":\"57\",\"sleep_hours\":\"5\",\"parent_education\":\"High School\",\"extracurricular\":\"No\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1289,
+      "session_id": "session_1778123728281",
+      "row_index": 18,
+      "row_data": "{\"study_hours\":\"8\",\"attendance_rate\":\"88\",\"midterm_score\":\"84\",\"assignment_avg\":\"86\",\"sleep_hours\":\"8\",\"parent_education\":\"College\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1290,
+      "session_id": "session_1778123728281",
+      "row_index": 19,
+      "row_data": "{\"study_hours\":\"3\",\"attendance_rate\":\"50\",\"midterm_score\":\"40\",\"assignment_avg\":\"46\",\"sleep_hours\":\"4\",\"parent_education\":\"High School\",\"extracurricular\":\"No\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1291,
+      "session_id": "session_1778123728281",
+      "row_index": 20,
+      "row_data": "{\"study_hours\":\"6\",\"attendance_rate\":\"76\",\"midterm_score\":\"71\",\"assignment_avg\":\"74\",\"sleep_hours\":\"7\",\"parent_education\":\"College\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1292,
+      "session_id": "session_1778123728281",
+      "row_index": 21,
+      "row_data": "{\"study_hours\":\"5\",\"attendance_rate\":\"72\",\"midterm_score\":\"66\",\"assignment_avg\":\"70\",\"sleep_hours\":\"6\",\"parent_education\":\"Graduate\",\"extracurricular\":\"No\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1293,
+      "session_id": "session_1778123728281",
+      "row_index": 22,
+      "row_data": "{\"study_hours\":\"2\",\"attendance_rate\":\"46\",\"midterm_score\":\"36\",\"assignment_avg\":\"42\",\"sleep_hours\":\"4\",\"parent_education\":\"High School\",\"extracurricular\":\"No\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1294,
+      "session_id": "session_1778123728281",
+      "row_index": 23,
+      "row_data": "{\"study_hours\":\"9\",\"attendance_rate\":\"96\",\"midterm_score\":\"92\",\"assignment_avg\":\"94\",\"sleep_hours\":\"8\",\"parent_education\":\"Graduate\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1295,
+      "session_id": "session_1778123728281",
+      "row_index": 24,
+      "row_data": "{\"study_hours\":\"4\",\"attendance_rate\":\"64\",\"midterm_score\":\"58\",\"assignment_avg\":\"61\",\"sleep_hours\":\"6\",\"parent_education\":\"College\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1296,
+      "session_id": "session_1778123728281",
+      "row_index": 25,
+      "row_data": "{\"study_hours\":\"1\",\"attendance_rate\":\"42\",\"midterm_score\":\"32\",\"assignment_avg\":\"37\",\"sleep_hours\":\"3\",\"parent_education\":\"High School\",\"extracurricular\":\"No\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1297,
+      "session_id": "session_1778123728281",
+      "row_index": 26,
+      "row_data": "{\"study_hours\":\"7\",\"attendance_rate\":\"84\",\"midterm_score\":\"79\",\"assignment_avg\":\"81\",\"sleep_hours\":\"7\",\"parent_education\":\"College\",\"extracurricular\":\"No\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1298,
+      "session_id": "session_1778123728281",
+      "row_index": 27,
+      "row_data": "{\"study_hours\":\"3\",\"attendance_rate\":\"54\",\"midterm_score\":\"47\",\"assignment_avg\":\"51\",\"sleep_hours\":\"5\",\"parent_education\":\"High School\",\"extracurricular\":\"Yes\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1299,
+      "session_id": "session_1778123728281",
+      "row_index": 28,
+      "row_data": "{\"study_hours\":\"8\",\"attendance_rate\":\"91\",\"midterm_score\":\"87\",\"assignment_avg\":\"89\",\"sleep_hours\":\"8\",\"parent_education\":\"Graduate\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1300,
+      "session_id": "session_1778123728281",
+      "row_index": 29,
+      "row_data": "{\"study_hours\":\"6\",\"attendance_rate\":\"77\",\"midterm_score\":\"73\",\"assignment_avg\":\"76\",\"sleep_hours\":\"7\",\"parent_education\":\"College\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1301,
+      "session_id": "session_1778123728281",
+      "row_index": 30,
+      "row_data": "{\"study_hours\":\"2\",\"attendance_rate\":\"45\",\"midterm_score\":\"34\",\"assignment_avg\":\"39\",\"sleep_hours\":\"4\",\"parent_education\":\"High School\",\"extracurricular\":\"No\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1302,
+      "session_id": "session_1778123728281",
+      "row_index": 31,
+      "row_data": "{\"study_hours\":\"9\",\"attendance_rate\":\"98\",\"midterm_score\":\"95\",\"assignment_avg\":\"96\",\"sleep_hours\":\"9\",\"parent_education\":\"Graduate\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1303,
+      "session_id": "session_1778123728281",
+      "row_index": 32,
+      "row_data": "{\"study_hours\":\"5\",\"attendance_rate\":\"69\",\"midterm_score\":\"63\",\"assignment_avg\":\"67\",\"sleep_hours\":\"6\",\"parent_education\":\"College\",\"extracurricular\":\"No\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1304,
+      "session_id": "session_1778123728281",
+      "row_index": 33,
+      "row_data": "{\"study_hours\":\"1\",\"attendance_rate\":\"37\",\"midterm_score\":\"27\",\"assignment_avg\":\"31\",\"sleep_hours\":\"3\",\"parent_education\":\"High School\",\"extracurricular\":\"No\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1305,
+      "session_id": "session_1778123728281",
+      "row_index": 34,
+      "row_data": "{\"study_hours\":\"7\",\"attendance_rate\":\"83\",\"midterm_score\":\"77\",\"assignment_avg\":\"79\",\"sleep_hours\":\"7\",\"parent_education\":\"Graduate\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1306,
+      "session_id": "session_1778123728281",
+      "row_index": 35,
+      "row_data": "{\"study_hours\":\"4\",\"attendance_rate\":\"61\",\"midterm_score\":\"53\",\"assignment_avg\":\"58\",\"sleep_hours\":\"5\",\"parent_education\":\"High School\",\"extracurricular\":\"No\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1307,
+      "session_id": "session_1778123728281",
+      "row_index": 36,
+      "row_data": "{\"study_hours\":\"8\",\"attendance_rate\":\"89\",\"midterm_score\":\"85\",\"assignment_avg\":\"87\",\"sleep_hours\":\"8\",\"parent_education\":\"College\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1308,
+      "session_id": "session_1778123728281",
+      "row_index": 37,
+      "row_data": "{\"study_hours\":\"3\",\"attendance_rate\":\"51\",\"midterm_score\":\"41\",\"assignment_avg\":\"47\",\"sleep_hours\":\"4\",\"parent_education\":\"High School\",\"extracurricular\":\"No\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1309,
+      "session_id": "session_1778123728281",
+      "row_index": 38,
+      "row_data": "{\"study_hours\":\"6\",\"attendance_rate\":\"74\",\"midterm_score\":\"68\",\"assignment_avg\":\"72\",\"sleep_hours\":\"7\",\"parent_education\":\"College\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1310,
+      "session_id": "session_1778123728281",
+      "row_index": 39,
+      "row_data": "{\"study_hours\":\"5\",\"attendance_rate\":\"71\",\"midterm_score\":\"64\",\"assignment_avg\":\"69\",\"sleep_hours\":\"6\",\"parent_education\":\"Graduate\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1311,
+      "session_id": "session_1778123728281",
+      "row_index": 40,
+      "row_data": "{\"study_hours\":\"2\",\"attendance_rate\":\"47\",\"midterm_score\":\"37\",\"assignment_avg\":\"43\",\"sleep_hours\":\"4\",\"parent_education\":\"High School\",\"extracurricular\":\"No\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1312,
+      "session_id": "session_1778123728281",
+      "row_index": 41,
+      "row_data": "{\"study_hours\":\"9\",\"attendance_rate\":\"94\",\"midterm_score\":\"90\",\"assignment_avg\":\"92\",\"sleep_hours\":\"8\",\"parent_education\":\"Graduate\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1313,
+      "session_id": "session_1778123728281",
+      "row_index": 42,
+      "row_data": "{\"study_hours\":\"4\",\"attendance_rate\":\"63\",\"midterm_score\":\"56\",\"assignment_avg\":\"60\",\"sleep_hours\":\"6\",\"parent_education\":\"College\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1314,
+      "session_id": "session_1778123728281",
+      "row_index": 43,
+      "row_data": "{\"study_hours\":\"1\",\"attendance_rate\":\"41\",\"midterm_score\":\"31\",\"assignment_avg\":\"36\",\"sleep_hours\":\"3\",\"parent_education\":\"High School\",\"extracurricular\":\"No\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1315,
+      "session_id": "session_1778123728281",
+      "row_index": 44,
+      "row_data": "{\"study_hours\":\"7\",\"attendance_rate\":\"86\",\"midterm_score\":\"81\",\"assignment_avg\":\"83\",\"sleep_hours\":\"7\",\"parent_education\":\"College\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1316,
+      "session_id": "session_1778123728281",
+      "row_index": 45,
+      "row_data": "{\"study_hours\":\"3\",\"attendance_rate\":\"53\",\"midterm_score\":\"46\",\"assignment_avg\":\"50\",\"sleep_hours\":\"5\",\"parent_education\":\"High School\",\"extracurricular\":\"No\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1317,
+      "session_id": "session_1778123728281",
+      "row_index": 46,
+      "row_data": "{\"study_hours\":\"8\",\"attendance_rate\":\"93\",\"midterm_score\":\"89\",\"assignment_avg\":\"90\",\"sleep_hours\":\"8\",\"parent_education\":\"Graduate\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1318,
+      "session_id": "session_1778123728281",
+      "row_index": 47,
+      "row_data": "{\"study_hours\":\"6\",\"attendance_rate\":\"79\",\"midterm_score\":\"74\",\"assignment_avg\":\"77\",\"sleep_hours\":\"7\",\"parent_education\":\"College\",\"extracurricular\":\"No\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1319,
+      "session_id": "session_1778123728281",
+      "row_index": 48,
+      "row_data": "{\"study_hours\":\"2\",\"attendance_rate\":\"43\",\"midterm_score\":\"33\",\"assignment_avg\":\"38\",\"sleep_hours\":\"4\",\"parent_education\":\"High School\",\"extracurricular\":\"No\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1320,
+      "session_id": "session_1778123728281",
+      "row_index": 49,
+      "row_data": "{\"study_hours\":\"9\",\"attendance_rate\":\"99\",\"midterm_score\":\"96\",\"assignment_avg\":\"97\",\"sleep_hours\":\"9\",\"parent_education\":\"Graduate\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1321,
+      "session_id": "session_1778123728281",
+      "row_index": 50,
+      "row_data": "{\"study_hours\":\"5\",\"attendance_rate\":\"67\",\"midterm_score\":\"60\",\"assignment_avg\":\"64\",\"sleep_hours\":\"6\",\"parent_education\":\"College\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1322,
+      "session_id": "session_1778123728281",
+      "row_index": 51,
+      "row_data": "{\"study_hours\":\"4\",\"attendance_rate\":\"65\",\"midterm_score\":\"59\",\"assignment_avg\":\"62\",\"sleep_hours\":\"6\",\"parent_education\":\"College\",\"extracurricular\":\"No\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1323,
+      "session_id": "session_1778123728281",
+      "row_index": 52,
+      "row_data": "{\"study_hours\":\"7\",\"attendance_rate\":\"87\",\"midterm_score\":\"82\",\"assignment_avg\":\"84\",\"sleep_hours\":\"7\",\"parent_education\":\"Graduate\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1324,
+      "session_id": "session_1778123728281",
+      "row_index": 53,
+      "row_data": "{\"study_hours\":\"3\",\"attendance_rate\":\"56\",\"midterm_score\":\"49\",\"assignment_avg\":\"53\",\"sleep_hours\":\"5\",\"parent_education\":\"High School\",\"extracurricular\":\"Yes\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1325,
+      "session_id": "session_1778123728281",
+      "row_index": 54,
+      "row_data": "{\"study_hours\":\"8\",\"attendance_rate\":\"90\",\"midterm_score\":\"86\",\"assignment_avg\":\"88\",\"sleep_hours\":\"8\",\"parent_education\":\"College\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1326,
+      "session_id": "session_1778123728281",
+      "row_index": 55,
+      "row_data": "{\"study_hours\":\"6\",\"attendance_rate\":\"73\",\"midterm_score\":\"67\",\"assignment_avg\":\"71\",\"sleep_hours\":\"7\",\"parent_education\":\"College\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1327,
+      "session_id": "session_1778123728281",
+      "row_index": 56,
+      "row_data": "{\"study_hours\":\"2\",\"attendance_rate\":\"44\",\"midterm_score\":\"34\",\"assignment_avg\":\"39\",\"sleep_hours\":\"4\",\"parent_education\":\"High School\",\"extracurricular\":\"No\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1328,
+      "session_id": "session_1778123728281",
+      "row_index": 57,
+      "row_data": "{\"study_hours\":\"5\",\"attendance_rate\":\"70\",\"midterm_score\":\"64\",\"assignment_avg\":\"68\",\"sleep_hours\":\"6\",\"parent_education\":\"Graduate\",\"extracurricular\":\"No\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1329,
+      "session_id": "session_1778123728281",
+      "row_index": 58,
+      "row_data": "{\"study_hours\":\"1\",\"attendance_rate\":\"39\",\"midterm_score\":\"29\",\"assignment_avg\":\"33\",\"sleep_hours\":\"3\",\"parent_education\":\"High School\",\"extracurricular\":\"No\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1330,
+      "session_id": "session_1778123728281",
+      "row_index": 59,
+      "row_data": "{\"study_hours\":\"7\",\"attendance_rate\":\"85\",\"midterm_score\":\"80\",\"assignment_avg\":\"82\",\"sleep_hours\":\"7\",\"parent_education\":\"College\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1331,
+      "session_id": "session_1778123728281",
+      "row_index": 60,
+      "row_data": "{\"study_hours\":\"4\",\"attendance_rate\":\"62\",\"midterm_score\":\"54\",\"assignment_avg\":\"59\",\"sleep_hours\":\"5\",\"parent_education\":\"High School\",\"extracurricular\":\"No\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1332,
+      "session_id": "session_1778123728281",
+      "row_index": 61,
+      "row_data": "{\"study_hours\":\"8\",\"attendance_rate\":\"92\",\"midterm_score\":\"88\",\"assignment_avg\":\"90\",\"sleep_hours\":\"8\",\"parent_education\":\"Graduate\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1333,
+      "session_id": "session_1778123728281",
+      "row_index": 62,
+      "row_data": "{\"study_hours\":\"6\",\"attendance_rate\":\"78\",\"midterm_score\":\"72\",\"assignment_avg\":\"76\",\"sleep_hours\":\"7\",\"parent_education\":\"College\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1334,
+      "session_id": "session_1778123728281",
+      "row_index": 63,
+      "row_data": "{\"study_hours\":\"3\",\"attendance_rate\":\"50\",\"midterm_score\":\"43\",\"assignment_avg\":\"48\",\"sleep_hours\":\"4\",\"parent_education\":\"High School\",\"extracurricular\":\"No\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1335,
+      "session_id": "session_1778123728281",
+      "row_index": 64,
+      "row_data": "{\"study_hours\":\"9\",\"attendance_rate\":\"96\",\"midterm_score\":\"93\",\"assignment_avg\":\"95\",\"sleep_hours\":\"9\",\"parent_education\":\"Graduate\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1336,
+      "session_id": "session_1778123728281",
+      "row_index": 65,
+      "row_data": "{\"study_hours\":\"5\",\"attendance_rate\":\"68\",\"midterm_score\":\"61\",\"assignment_avg\":\"65\",\"sleep_hours\":\"6\",\"parent_education\":\"College\",\"extracurricular\":\"No\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1337,
+      "session_id": "session_1778123728281",
+      "row_index": 66,
+      "row_data": "{\"study_hours\":\"7\",\"attendance_rate\":\"83\",\"midterm_score\":\"78\",\"assignment_avg\":\"81\",\"sleep_hours\":\"7\",\"parent_education\":\"College\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1338,
+      "session_id": "session_1778123728281",
+      "row_index": 67,
+      "row_data": "{\"study_hours\":\"4\",\"attendance_rate\":\"60\",\"midterm_score\":\"51\",\"assignment_avg\":\"57\",\"sleep_hours\":\"5\",\"parent_education\":\"High School\",\"extracurricular\":\"No\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1339,
+      "session_id": "session_1778123728281",
+      "row_index": 68,
+      "row_data": "{\"study_hours\":\"8\",\"attendance_rate\":\"88\",\"midterm_score\":\"84\",\"assignment_avg\":\"87\",\"sleep_hours\":\"8\",\"parent_education\":\"Graduate\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1340,
+      "session_id": "session_1778123728281",
+      "row_index": 69,
+      "row_data": "{\"study_hours\":\"6\",\"attendance_rate\":\"76\",\"midterm_score\":\"70\",\"assignment_avg\":\"74\",\"sleep_hours\":\"7\",\"parent_education\":\"College\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1341,
+      "session_id": "session_1778123728281",
+      "row_index": 70,
+      "row_data": "{\"study_hours\":\"2\",\"attendance_rate\":\"46\",\"midterm_score\":\"36\",\"assignment_avg\":\"41\",\"sleep_hours\":\"4\",\"parent_education\":\"High School\",\"extracurricular\":\"No\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1342,
+      "session_id": "session_1778123728281",
+      "row_index": 71,
+      "row_data": "{\"study_hours\":\"5\",\"attendance_rate\":\"72\",\"midterm_score\":\"65\",\"assignment_avg\":\"70\",\"sleep_hours\":\"6\",\"parent_education\":\"College\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1343,
+      "session_id": "session_1778123728281",
+      "row_index": 72,
+      "row_data": "{\"study_hours\":\"9\",\"attendance_rate\":\"95\",\"midterm_score\":\"91\",\"assignment_avg\":\"93\",\"sleep_hours\":\"8\",\"parent_education\":\"Graduate\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1344,
+      "session_id": "session_1778123728281",
+      "row_index": 73,
+      "row_data": "{\"study_hours\":\"3\",\"attendance_rate\":\"54\",\"midterm_score\":\"46\",\"assignment_avg\":\"51\",\"sleep_hours\":\"5\",\"parent_education\":\"High School\",\"extracurricular\":\"No\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1345,
+      "session_id": "session_1778123728281",
+      "row_index": 74,
+      "row_data": "{\"study_hours\":\"7\",\"attendance_rate\":\"84\",\"midterm_score\":\"79\",\"assignment_avg\":\"82\",\"sleep_hours\":\"7\",\"parent_education\":\"College\",\"extracurricular\":\"No\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1346,
+      "session_id": "session_1778123728281",
+      "row_index": 75,
+      "row_data": "{\"study_hours\":\"4\",\"attendance_rate\":\"63\",\"midterm_score\":\"55\",\"assignment_avg\":\"60\",\"sleep_hours\":\"6\",\"parent_education\":\"High School\",\"extracurricular\":\"Yes\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1347,
+      "session_id": "session_1778123728281",
+      "row_index": 76,
+      "row_data": "{\"study_hours\":\"8\",\"attendance_rate\":\"91\",\"midterm_score\":\"87\",\"assignment_avg\":\"89\",\"sleep_hours\":\"8\",\"parent_education\":\"Graduate\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1348,
+      "session_id": "session_1778123728281",
+      "row_index": 77,
+      "row_data": "{\"study_hours\":\"6\",\"attendance_rate\":\"75\",\"midterm_score\":\"69\",\"assignment_avg\":\"73\",\"sleep_hours\":\"7\",\"parent_education\":\"College\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1349,
+      "session_id": "session_1778123728281",
+      "row_index": 78,
+      "row_data": "{\"study_hours\":\"2\",\"attendance_rate\":\"45\",\"midterm_score\":\"35\",\"assignment_avg\":\"40\",\"sleep_hours\":\"4\",\"parent_education\":\"High School\",\"extracurricular\":\"No\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1350,
+      "session_id": "session_1778123728281",
+      "row_index": 79,
+      "row_data": "{\"study_hours\":\"5\",\"attendance_rate\":\"69\",\"midterm_score\":\"62\",\"assignment_avg\":\"67\",\"sleep_hours\":\"6\",\"parent_education\":\"Graduate\",\"extracurricular\":\"No\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1351,
+      "session_id": "session_1778123728281",
+      "row_index": 80,
+      "row_data": "{\"study_hours\":\"1\",\"attendance_rate\":\"38\",\"midterm_score\":\"28\",\"assignment_avg\":\"32\",\"sleep_hours\":\"3\",\"parent_education\":\"High School\",\"extracurricular\":\"No\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1352,
+      "session_id": "session_1778123728281",
+      "row_index": 81,
+      "row_data": "{\"study_hours\":\"7\",\"attendance_rate\":\"86\",\"midterm_score\":\"81\",\"assignment_avg\":\"84\",\"sleep_hours\":\"7\",\"parent_education\":\"College\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1353,
+      "session_id": "session_1778123728281",
+      "row_index": 82,
+      "row_data": "{\"study_hours\":\"4\",\"attendance_rate\":\"61\",\"midterm_score\":\"53\",\"assignment_avg\":\"58\",\"sleep_hours\":\"5\",\"parent_education\":\"High School\",\"extracurricular\":\"No\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1354,
+      "session_id": "session_1778123728281",
+      "row_index": 83,
+      "row_data": "{\"study_hours\":\"8\",\"attendance_rate\":\"89\",\"midterm_score\":\"85\",\"assignment_avg\":\"88\",\"sleep_hours\":\"8\",\"parent_education\":\"College\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1355,
+      "session_id": "session_1778123728281",
+      "row_index": 84,
+      "row_data": "{\"study_hours\":\"6\",\"attendance_rate\":\"77\",\"midterm_score\":\"71\",\"assignment_avg\":\"75\",\"sleep_hours\":\"7\",\"parent_education\":\"College\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1356,
+      "session_id": "session_1778123728281",
+      "row_index": 85,
+      "row_data": "{\"study_hours\":\"3\",\"attendance_rate\":\"52\",\"midterm_score\":\"44\",\"assignment_avg\":\"49\",\"sleep_hours\":\"4\",\"parent_education\":\"High School\",\"extracurricular\":\"No\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1357,
+      "session_id": "session_1778123728281",
+      "row_index": 86,
+      "row_data": "{\"study_hours\":\"9\",\"attendance_rate\":\"97\",\"midterm_score\":\"93\",\"assignment_avg\":\"95\",\"sleep_hours\":\"9\",\"parent_education\":\"Graduate\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1358,
+      "session_id": "session_1778123728281",
+      "row_index": 87,
+      "row_data": "{\"study_hours\":\"5\",\"attendance_rate\":\"71\",\"midterm_score\":\"65\",\"assignment_avg\":\"69\",\"sleep_hours\":\"6\",\"parent_education\":\"College\",\"extracurricular\":\"No\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1359,
+      "session_id": "session_1778123728281",
+      "row_index": 88,
+      "row_data": "{\"study_hours\":\"7\",\"attendance_rate\":\"82\",\"midterm_score\":\"77\",\"assignment_avg\":\"80\",\"sleep_hours\":\"7\",\"parent_education\":\"Graduate\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1360,
+      "session_id": "session_1778123728281",
+      "row_index": 89,
+      "row_data": "{\"study_hours\":\"4\",\"attendance_rate\":\"64\",\"midterm_score\":\"57\",\"assignment_avg\":\"61\",\"sleep_hours\":\"6\",\"parent_education\":\"High School\",\"extracurricular\":\"Yes\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1361,
+      "session_id": "session_1778123728281",
+      "row_index": 90,
+      "row_data": "{\"study_hours\":\"8\",\"attendance_rate\":\"90\",\"midterm_score\":\"86\",\"assignment_avg\":\"88\",\"sleep_hours\":\"8\",\"parent_education\":\"College\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1362,
+      "session_id": "session_1778123728281",
+      "row_index": 91,
+      "row_data": "{\"study_hours\":\"6\",\"attendance_rate\":\"74\",\"midterm_score\":\"68\",\"assignment_avg\":\"72\",\"sleep_hours\":\"7\",\"parent_education\":\"College\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1363,
+      "session_id": "session_1778123728281",
+      "row_index": 92,
+      "row_data": "{\"study_hours\":\"2\",\"attendance_rate\":\"47\",\"midterm_score\":\"37\",\"assignment_avg\":\"42\",\"sleep_hours\":\"4\",\"parent_education\":\"High School\",\"extracurricular\":\"No\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1364,
+      "session_id": "session_1778123728281",
+      "row_index": 93,
+      "row_data": "{\"study_hours\":\"5\",\"attendance_rate\":\"70\",\"midterm_score\":\"63\",\"assignment_avg\":\"68\",\"sleep_hours\":\"6\",\"parent_education\":\"Graduate\",\"extracurricular\":\"No\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1365,
+      "session_id": "session_1778123728281",
+      "row_index": 94,
+      "row_data": "{\"study_hours\":\"9\",\"attendance_rate\":\"98\",\"midterm_score\":\"95\",\"assignment_avg\":\"96\",\"sleep_hours\":\"9\",\"parent_education\":\"Graduate\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1366,
+      "session_id": "session_1778123728281",
+      "row_index": 95,
+      "row_data": "{\"study_hours\":\"3\",\"attendance_rate\":\"53\",\"midterm_score\":\"45\",\"assignment_avg\":\"50\",\"sleep_hours\":\"5\",\"parent_education\":\"High School\",\"extracurricular\":\"No\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1367,
+      "session_id": "session_1778123728281",
+      "row_index": 96,
+      "row_data": "{\"study_hours\":\"7\",\"attendance_rate\":\"85\",\"midterm_score\":\"80\",\"assignment_avg\":\"83\",\"sleep_hours\":\"7\",\"parent_education\":\"College\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1368,
+      "session_id": "session_1778123728281",
+      "row_index": 97,
+      "row_data": "{\"study_hours\":\"4\",\"attendance_rate\":\"60\",\"midterm_score\":\"52\",\"assignment_avg\":\"57\",\"sleep_hours\":\"5\",\"parent_education\":\"High School\",\"extracurricular\":\"No\",\"result\":\"Fail\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1369,
+      "session_id": "session_1778123728281",
+      "row_index": 98,
+      "row_data": "{\"study_hours\":\"8\",\"attendance_rate\":\"92\",\"midterm_score\":\"88\",\"assignment_avg\":\"90\",\"sleep_hours\":\"8\",\"parent_education\":\"Graduate\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
+    },
+    {
+      "id": 1370,
+      "session_id": "session_1778123728281",
+      "row_index": 99,
+      "row_data": "{\"study_hours\":\"6\",\"attendance_rate\":\"79\",\"midterm_score\":\"73\",\"assignment_avg\":\"77\",\"sleep_hours\":\"7\",\"parent_education\":\"College\",\"extracurricular\":\"Yes\",\"result\":\"Pass\"}",
+      "created_at": "2026-05-07T03:15:28.283Z"
     }
   ],
   "model_results": [
@@ -9496,6 +10196,39 @@
       "f1_score": 0.8571428571428571,
       "confusion_matrix": "{\"tp\":3,\"tn\":8,\"fp\":1,\"fn\":0}",
       "trained_at": "2026-05-07T02:44:23.275Z"
+    },
+    {
+      "id": 56,
+      "session_id": "session_1778123728281",
+      "model_name": "KNN",
+      "accuracy": 1,
+      "precision_score": 1,
+      "recall": 1,
+      "f1_score": 1,
+      "confusion_matrix": "{\"tp\":6,\"tn\":14,\"fp\":0,\"fn\":0}",
+      "trained_at": "2026-05-07T03:15:58.090Z"
+    },
+    {
+      "id": 57,
+      "session_id": "session_1778123728281",
+      "model_name": "SVM",
+      "accuracy": 0.7,
+      "precision_score": 0,
+      "recall": 0,
+      "f1_score": 0,
+      "confusion_matrix": "{\"tp\":0,\"tn\":14,\"fp\":0,\"fn\":6}",
+      "trained_at": "2026-05-07T03:16:01.550Z"
+    },
+    {
+      "id": 58,
+      "session_id": "session_1778123728281",
+      "model_name": "ANN",
+      "accuracy": 1,
+      "precision_score": 1,
+      "recall": 1,
+      "f1_score": 1,
+      "confusion_matrix": "{\"tp\":6,\"tn\":14,\"fp\":0,\"fn\":0}",
+      "trained_at": "2026-05-07T03:16:12.059Z"
     }
   ]
 }

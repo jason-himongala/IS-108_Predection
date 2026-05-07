@@ -5,7 +5,7 @@
   "main": "main.js",
   "homepage": "./",
   "scripts": {
-    "start": "\"%TEMP%\\electron_rt\\electron.exe\" .",
+    "start": "node scripts/start-electron.js",
     "build": "electron-builder"
   },
   "keywords": [
