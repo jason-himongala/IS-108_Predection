@@ -1,0 +1,687 @@
+<!-- FILE: renderer/index.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self';"
+    />
+    <title>IS 108 - Business Intelligence Predictive Modeling</title>
+
+    <!-- CDN Links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- ===== SIDEBAR ===== -->
+      <nav class="sidebar">
+        <div class="sidebar-brand">
+          <h2>BI Predictive</h2>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <button class="nav-link active" data-panel="dashboard">
+              <span class="nav-icon">🏠</span>
+              <span>Dashboard</span>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" data-panel="dataset">
+              <span class="nav-icon">📂</span>
+              <span>Dataset</span>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" data-panel="preprocessing">
+              <span class="nav-icon">⚙️</span>
+              <span>Preprocessing</span>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" data-panel="training">
+              <span class="nav-icon">🤖</span>
+              <span>Train Models</span>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" data-panel="evaluation">
+              <span class="nav-icon">📊</span>
+              <span>Evaluation</span>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" data-panel="predict">
+              <span class="nav-icon">🔮</span>
+              <span>Predict</span>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" data-panel="history">
+              <span class="nav-icon">🗄️</span>
+              <span>History</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- ===== MAIN CONTENT ===== -->
+      <div class="main-content">
+        <header class="header">
+          <h1 id="panel-title">Dashboard</h1>
+        </header>
+
+        <div class="content-area">
+          <!-- ===== DASHBOARD PANEL ===== -->
+          <div class="panel active" id="dashboard">
+            <div class="card">
+              <div class="card-header">Project Overview</div>
+              <div class="metrics-grid">
+                <div class="metric-card">
+                  <div class="metric-label">Total Records</div>
+                  <div class="metric-value" id="metric-records">0</div>
+                </div>
+                <div class="metric-card">
+                  <div class="metric-label">Feature Count</div>
+                  <div class="metric-value" id="metric-features">0</div>
+                </div>
+                <div class="metric-card">
+                  <div class="metric-label">Models Trained</div>
+                  <div class="metric-value" id="metric-models">0</div>
+                </div>
+                <div class="metric-card success">
+                  <div class="metric-label">Best Accuracy</div>
+                  <div class="metric-value" id="metric-accuracy">-</div>
+                  <div class="metric-unit">%</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">Predictive Modeling Workflow</div>
+              <div class="step-indicator" id="step-indicator"></div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">Getting Started</div>
+              <div class="card-content">
+                <p>
+                  Welcome to the Business Intelligence Predictive Modeling
+                  Application. This tool allows you to:
+                </p>
+                <ol style="margin-left: 20px; margin-top: 12px">
+                  <li>📂 Import CSV or Excel datasets</li>
+                  <li>⚙️ Preprocess data with normalization and encoding</li>
+                  <li>🤖 Train three ML algorithms: KNN, SVM, and ANN</li>
+                  <li>📊 Evaluate and compare model performance</li>
+                  <li>🔮 Make predictions on new data</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== DATASET PANEL ===== -->
+          <div class="panel" id="dataset">
+            <div class="card">
+              <div class="card-header">Import Dataset</div>
+              <div class="form-group">
+                <label class="form-label">Choose File (CSV or Excel)</label>
+                <input type="file" id="file-input" accept=".csv,.xlsx,.xls" />
+              </div>
+              <div class="btn-group">
+                <button class="btn btn-primary" id="btn-load-file">
+                  📤 Load File
+                </button>
+                <button class="btn btn-secondary" id="btn-load-sample">
+                  📋 Load Sample Data
+                </button>
+              </div>
+            </div>
+
+            <div class="card" id="dataset-info" style="display: none">
+              <div class="card-header">Dataset Information</div>
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                  gap: 16px;
+                  margin-bottom: 20px;
+                "
+              >
+                <div>
+                  <div class="metric-label">Rows</div>
+                  <div
+                    id="info-rows"
+                    style="
+                      font-size: 20px;
+                      font-weight: 700;
+                      color: var(--accent-blue);
+                    "
+                  >
+                    0
+                  </div>
+                </div>
+                <div>
+                  <div class="metric-label">Columns</div>
+                  <div
+                    id="info-columns"
+                    style="
+                      font-size: 20px;
+                      font-weight: 700;
+                      color: var(--accent-blue);
+                    "
+                  >
+                    0
+                  </div>
+                </div>
+              </div>
+              <div style="margin-bottom: 16px">
+                <div class="metric-label">Column Names</div>
+                <div
+                  id="info-columns-list"
+                  style="
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 8px;
+                    margin-top: 8px;
+                  "
+                ></div>
+              </div>
+              <div class="btn-group">
+                <button class="btn btn-primary" id="btn-save-dataset">
+                  💾 Save to Database
+                </button>
+              </div>
+            </div>
+
+            <div class="card" id="dataset-preview" style="display: none">
+              <div class="card-header">
+                Data Preview
+                <div
+                  style="
+                    font-size: 12px;
+                    color: var(--text-muted);
+                    font-weight: 400;
+                  "
+                >
+                  Page <span id="page-number">1</span>
+                </div>
+              </div>
+              <table class="data-table" id="data-table">
+                <thead>
+                  <tr id="table-header"></tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+              </table>
+              <div class="pagination" id="pagination"></div>
+            </div>
+          </div>
+
+          <!-- ===== PREPROCESSING PANEL ===== -->
+          <div class="panel" id="preprocessing">
+            <div class="card">
+              <div class="card-header">Data Preprocessing Configuration</div>
+              <div class="form-group">
+                <label class="form-label">Select Feature Columns</label>
+                <div
+                  id="feature-checkboxes"
+                  style="max-height: 200px; overflow-y: auto"
+                ></div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Select Target Column</label>
+                <select id="target-select"></select>
+              </div>
+              <button class="btn btn-primary" id="btn-preprocess">
+                ⚙️ Run Preprocessing
+              </button>
+            </div>
+
+            <div class="card" id="preprocessing-results" style="display: none">
+              <div class="card-header">Preprocessing Results</div>
+
+              <div style="margin-bottom: 24px">
+                <h3 style="margin-bottom: 12px; font-size: 16px">
+                  Missing Values Handled
+                </h3>
+                <table class="data-table" id="missing-values-table">
+                  <thead>
+                    <tr>
+                      <th>Column</th>
+                      <th>Missing Count</th>
+                    </tr>
+                  </thead>
+                  <tbody id="missing-tbody"></tbody>
+                </table>
+              </div>
+
+              <div style="margin-bottom: 24px">
+                <h3 style="margin-bottom: 12px; font-size: 16px">
+                  Categorical Encoding
+                </h3>
+                <div
+                  id="encoding-display"
+                  style="
+                    font-family: &quot;JetBrains Mono&quot;;
+                    font-size: 12px;
+                    background: var(--bg-hover);
+                    padding: 12px;
+                    border-radius: 8px;
+                    max-height: 200px;
+                    overflow-y: auto;
+                  "
+                ></div>
+              </div>
+
+              <div style="margin-bottom: 24px">
+                <h3 style="margin-bottom: 12px; font-size: 16px">Data Split</h3>
+                <div
+                  style="
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 12px;
+                  "
+                >
+                  <div class="metric-card">
+                    <div class="metric-label">Training Samples</div>
+                    <div class="metric-value" id="train-count">0</div>
+                  </div>
+                  <div class="metric-card">
+                    <div class="metric-label">Test Samples</div>
+                    <div class="metric-value" id="test-count">0</div>
+                  </div>
+                </div>
+              </div>
+
+              <h3 style="margin-bottom: 12px; font-size: 16px">
+                Processed Data Preview
+              </h3>
+              <div style="max-height: 300px; overflow-y: auto">
+                <table class="data-table" id="processed-data-table">
+                  <thead>
+                    <tr id="processed-header"></tr>
+                  </thead>
+                  <tbody id="processed-body"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== TRAINING PANEL ===== -->
+          <div class="panel" id="training">
+            <div style="margin-bottom: 20px">
+              <button class="btn btn-primary" id="btn-train-all">
+                🚀 Train All Models
+              </button>
+            </div>
+
+            <div
+              style="
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 20px;
+              "
+            >
+              <!-- KNN Card -->
+              <div class="card">
+                <div class="card-header">K-Nearest Neighbors (KNN)</div>
+                <div class="form-group">
+                  <label class="form-label">K Value</label>
+                  <input
+                    type="number"
+                    id="knn-k-value"
+                    value="5"
+                    min="1"
+                    max="20"
+                  />
+                </div>
+                <div style="margin-bottom: 16px">
+                  <div class="metric-label">Status</div>
+                  <span class="badge badge-warning" id="knn-status"
+                    >⏳ Untrained</span
+                  >
+                </div>
+                <div
+                  id="knn-metrics"
+                  style="display: none; margin-bottom: 16px"
+                >
+                  <div class="badge badge-success">
+                    Accuracy: <strong id="knn-accuracy">0%</strong>
+                  </div>
+                </div>
+                <button
+                  class="btn btn-primary"
+                  id="btn-train-knn"
+                  style="width: 100%"
+                >
+                  Train KNN
+                </button>
+              </div>
+
+              <!-- SVM Card -->
+              <div class="card">
+                <div class="card-header">Support Vector Machine (SVM)</div>
+                <div
+                  style="
+                    color: var(--text-muted);
+                    font-size: 13px;
+                    margin-bottom: 16px;
+                  "
+                >
+                  <p>RBF Kernel • C=1 • Gamma=0.5</p>
+                </div>
+                <div style="margin-bottom: 16px">
+                  <div class="metric-label">Status</div>
+                  <span class="badge badge-warning" id="svm-status"
+                    >⏳ Untrained</span
+                  >
+                </div>
+                <div
+                  id="svm-metrics"
+                  style="display: none; margin-bottom: 16px"
+                >
+                  <div class="badge badge-success">
+                    Accuracy: <strong id="svm-accuracy">0%</strong>
+                  </div>
+                </div>
+                <button
+                  class="btn btn-primary"
+                  id="btn-train-svm"
+                  style="width: 100%"
+                >
+                  Train SVM
+                </button>
+              </div>
+
+              <!-- ANN Card -->
+              <div class="card">
+                <div class="card-header">Artificial Neural Network (ANN)</div>
+                <div class="form-group">
+                  <label class="form-label">Epochs</label>
+                  <input
+                    type="number"
+                    id="ann-epochs"
+                    value="100"
+                    min="10"
+                    max="1000"
+                  />
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Learning Rate</label>
+                  <input
+                    type="number"
+                    id="ann-learning-rate"
+                    value="0.1"
+                    min="0.01"
+                    max="1"
+                    step="0.01"
+                  />
+                </div>
+                <div style="margin-bottom: 16px">
+                  <div class="metric-label">Status</div>
+                  <span class="badge badge-warning" id="ann-status"
+                    >⏳ Untrained</span
+                  >
+                </div>
+                <div
+                  id="ann-metrics"
+                  style="display: none; margin-bottom: 16px"
+                >
+                  <div class="badge badge-success">
+                    Accuracy: <strong id="ann-accuracy">0%</strong>
+                  </div>
+                </div>
+                <button
+                  class="btn btn-primary"
+                  id="btn-train-ann"
+                  style="width: 100%"
+                >
+                  Train ANN
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== EVALUATION PANEL ===== -->
+          <div class="panel" id="evaluation">
+            <div class="card">
+              <div class="tabs" id="eval-tabs">
+                <button class="tab active" data-tab="eval-knn">KNN</button>
+                <button class="tab" data-tab="eval-svm">SVM</button>
+                <button class="tab" data-tab="eval-ann">ANN</button>
+                <button class="tab" data-tab="eval-comparison">
+                  Comparison
+                </button>
+              </div>
+
+              <!-- KNN Evaluation -->
+              <div class="tab-content active" id="eval-knn">
+                <div class="metrics-grid">
+                  <div class="metric-card">
+                    <div class="metric-label">Accuracy</div>
+                    <div class="metric-value" id="knn-eval-accuracy">-</div>
+                    <div class="metric-unit">%</div>
+                  </div>
+                  <div class="metric-card">
+                    <div class="metric-label">Precision</div>
+                    <div class="metric-value" id="knn-eval-precision">-</div>
+                    <div class="metric-unit">%</div>
+                  </div>
+                  <div class="metric-card">
+                    <div class="metric-label">Recall</div>
+                    <div class="metric-value" id="knn-eval-recall">-</div>
+                    <div class="metric-unit">%</div>
+                  </div>
+                  <div class="metric-card">
+                    <div class="metric-label">F1-Score</div>
+                    <div class="metric-value" id="knn-eval-f1">-</div>
+                    <div class="metric-unit">%</div>
+                  </div>
+                </div>
+                <h3 style="margin: 24px 0 16px; font-size: 16px">
+                  Confusion Matrix
+                </h3>
+                <div class="confusion-matrix" id="knn-confusion"></div>
+              </div>
+
+              <!-- SVM Evaluation -->
+              <div class="tab-content" id="eval-svm">
+                <div class="metrics-grid">
+                  <div class="metric-card">
+                    <div class="metric-label">Accuracy</div>
+                    <div class="metric-value" id="svm-eval-accuracy">-</div>
+                    <div class="metric-unit">%</div>
+                  </div>
+                  <div class="metric-card">
+                    <div class="metric-label">Precision</div>
+                    <div class="metric-value" id="svm-eval-precision">-</div>
+                    <div class="metric-unit">%</div>
+                  </div>
+                  <div class="metric-card">
+                    <div class="metric-label">Recall</div>
+                    <div class="metric-value" id="svm-eval-recall">-</div>
+                    <div class="metric-unit">%</div>
+                  </div>
+                  <div class="metric-card">
+                    <div class="metric-label">F1-Score</div>
+                    <div class="metric-value" id="svm-eval-f1">-</div>
+                    <div class="metric-unit">%</div>
+                  </div>
+                </div>
+                <h3 style="margin: 24px 0 16px; font-size: 16px">
+                  Confusion Matrix
+                </h3>
+                <div class="confusion-matrix" id="svm-confusion"></div>
+              </div>
+
+              <!-- ANN Evaluation -->
+              <div class="tab-content" id="eval-ann">
+                <div class="metrics-grid">
+                  <div class="metric-card">
+                    <div class="metric-label">Accuracy</div>
+                    <div class="metric-value" id="ann-eval-accuracy">-</div>
+                    <div class="metric-unit">%</div>
+                  </div>
+                  <div class="metric-card">
+                    <div class="metric-label">Precision</div>
+                    <div class="metric-value" id="ann-eval-precision">-</div>
+                    <div class="metric-unit">%</div>
+                  </div>
+                  <div class="metric-card">
+                    <div class="metric-label">Recall</div>
+                    <div class="metric-value" id="ann-eval-recall">-</div>
+                    <div class="metric-unit">%</div>
+                  </div>
+                  <div class="metric-card">
+                    <div class="metric-label">F1-Score</div>
+                    <div class="metric-value" id="ann-eval-f1">-</div>
+                    <div class="metric-unit">%</div>
+                  </div>
+                </div>
+                <h3 style="margin: 24px 0 16px; font-size: 16px">
+                  Training Loss Curve
+                </h3>
+                <div class="chart-container">
+                  <canvas id="ann-loss-chart"></canvas>
+                </div>
+                <h3 style="margin: 24px 0 16px; font-size: 16px">
+                  Confusion Matrix
+                </h3>
+                <div class="confusion-matrix" id="ann-confusion"></div>
+              </div>
+
+              <!-- Comparison -->
+              <div class="tab-content" id="eval-comparison">
+                <h3 style="margin-bottom: 16px; font-size: 16px">
+                  Model Comparison
+                </h3>
+                <div class="chart-container">
+                  <canvas id="comparison-chart"></canvas>
+                </div>
+                <h3 style="margin: 24px 0 16px; font-size: 16px">
+                  Summary Table
+                </h3>
+                <table class="data-table" id="comparison-table">
+                  <thead>
+                    <tr>
+                      <th>Model</th>
+                      <th>Accuracy</th>
+                      <th>Precision</th>
+                      <th>Recall</th>
+                      <th>F1-Score</th>
+                    </tr>
+                  </thead>
+                  <tbody id="comparison-tbody"></tbody>
+                </table>
+                <div
+                  style="
+                    margin-top: 24px;
+                    padding: 16px;
+                    background: var(--bg-tertiary);
+                    border-radius: 8px;
+                    border-left: 4px solid var(--accent-blue);
+                  "
+                >
+                  <div style="font-weight: 600; margin-bottom: 8px">
+                    Recommendation
+                  </div>
+                  <div
+                    id="recommendation-text"
+                    style="color: var(--text-muted)"
+                  >
+                    Train all models to see recommendation
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== PREDICTION PANEL ===== -->
+          <div class="panel" id="predict">
+            <div class="card">
+              <div class="card-header">Make Prediction</div>
+              <div class="form-group">
+                <label class="form-label">Select Model</label>
+                <select id="model-select">
+                  <option value="">-- Select a trained model --</option>
+                  <option value="KNN">K-Nearest Neighbors (KNN)</option>
+                  <option value="SVM">Support Vector Machine (SVM)</option>
+                  <option value="ANN">Artificial Neural Network (ANN)</option>
+                </select>
+              </div>
+              <div
+                id="prediction-range-warning"
+                class="prediction-warning"
+                style="display: none"
+              ></div>
+              <div id="prediction-inputs"></div>
+              <button class="btn btn-primary" id="btn-predict">
+                🔮 Make Prediction
+              </button>
+            </div>
+
+            <div id="prediction-output" style="display: none">
+              <div class="prediction-result">
+                <div class="prediction-badge" id="prediction-badge"></div>
+                <div class="confidence-score" id="confidence-display"></div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">Input Summary</div>
+                <table class="data-table" id="prediction-input-table">
+                  <thead>
+                    <tr>
+                      <th>Feature</th>
+                      <th>Value</th>
+                    </tr>
+                  </thead>
+                  <tbody id="prediction-input-tbody"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== HISTORY PANEL ===== -->
+          <div class="panel" id="history">
+            <div class="card">
+              <div class="card-header">
+                Model Training History
+                <button
+                  class="btn btn-danger"
+                  id="btn-clear-history"
+                  style="font-size: 12px; padding: 6px 12px"
+                >
+                  🗑️ Clear
+                </button>
+              </div>
+              <table class="data-table" id="history-table">
+                <thead>
+                  <tr>
+                    <th>Session ID</th>
+                    <th>Model</th>
+                    <th>Accuracy</th>
+                    <th>F1-Score</th>
+                    <th>Trained At</th>
+                  </tr>
+                </thead>
+                <tbody id="history-tbody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script defer src="./app.js"></script>
+  </body>
+</html>

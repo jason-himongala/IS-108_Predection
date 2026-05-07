@@ -1,0 +1,4 @@
+node_modules/
+*.log
+electron-runtime.zip
+.DS_Store

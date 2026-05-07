@@ -1,0 +1,27 @@
+{
+  "name": "is108-bi-app",
+  "version": "1.0.0",
+  "description": "Business Intelligence Predictive Modeling Application for IS 108",
+  "main": "main.js",
+  "homepage": "./",
+  "scripts": {
+    "start": "\"%TEMP%\\electron_rt\\electron.exe\" .",
+    "build": "electron-builder"
+  },
+  "keywords": [
+    "electron",
+    "machine-learning",
+    "predictive-modeling",
+    "student-performance"
+  ],
+  "author": "[Your Names Here]",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^28.3.3",
+    "papaparse": "^5.4.1",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "electron-builder": "^24.0.0"
+  }
+}
